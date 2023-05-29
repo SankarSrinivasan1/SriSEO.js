@@ -383,3 +383,52 @@ Using a module bundler provides the advantage of optimizing and combining multip
 Note: Make sure to adjust the paths and file names based on your project's structure and configuration.
 
 Remember to consult the documentation or official resources of your specific module bundler for more detailed instructions on how to include external libraries and build your project.
+
+
+Certainly! If you prefer an alternative way to include the "SEOify.js" library in HTML websites without using a module bundler, you can host the library file yourself and include it as a `<script>` tag in your HTML file. Here's how you can do it:
+
+1. Download the "SEOify.js" library file and save it in your project directory.
+
+2. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the location of the library file. For example:
+
+   ```html
+
+   <script src="path/to/seoify.js"></script>
+
+   ```
+
+   Replace `'path/to/seoify.js'` with the actual path to the library file in your project.
+
+3. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
+
+   ```html
+
+   <html>
+
+     <head>
+
+       <!-- Your HTML head content here -->
+
+     </head>
+
+     <body>
+
+       <!-- Your HTML body content here -->
+
+       
+
+       <script src="path/to/seoify.js"></script>
+
+     </body>
+
+   </html>
+
+   ```
+
+4. Once the library is included, you can start using the "SEOify.js" functions in your JavaScript code. Refer to the previous code examples and documentation provided earlier in this conversation for details on how to use the library's features.
+
+This method allows you to include the "SEOify.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for smaller projects or static websites.
+
+Remember to adjust the file path (`'path/to/seoify.js'`) based on the actual location of the library file in your project directory structure.
+
+Note: If you plan to use the library on multiple pages of your website, it's recommended to include the `<script>` tag in a shared HTML template or include file to ensure consistent usage across all pages.
