@@ -68,3 +68,78 @@ For any inquiries or questions, please contact [your-email@example.com](mailto:y
 ```
 
 Feel free to customize the README file based on your project specifics and add any additional sections or information that may be relevant.
+
+
+Certainly! In addition to including the "SEOify.js" library as a `<script>` tag in your HTML file, an alternative way to include the library is by using a module bundler like webpack or Rollup. This allows you to leverage the benefits of a module-based development approach and manage your project's dependencies more efficiently.
+
+To include "SEOify.js" using a module bundler, follow these steps:
+
+1. Install the "SEOify.js" library as a dependency in your project using npm or yarn:
+
+   ```bash
+
+   npm install seoify.js
+
+   ```
+
+   or
+
+   ```bash
+
+   yarn add seoify.js
+
+   ```
+
+2. Import the library in your JavaScript file:
+
+   ```javascript
+
+   import SEOify from 'seoify.js';
+
+   ```
+
+   If you're using a specific function from the library, you can import it directly:
+
+   ```javascript
+
+   import { setMetaTags, generateSlug } from 'seoify.js';
+
+   ```
+
+3. Build your JavaScript bundle using the module bundler's configuration. This process may vary depending on the bundler you're using.
+
+   For example, with webpack, you would typically have a configuration file (`webpack.config.js`) where you define the entry point and output configuration:
+
+   ```javascript
+
+   const path = require('path');
+
+   module.exports = {
+
+     entry: './src/index.js', // Replace with your entry file
+
+     output: {
+
+       filename: 'bundle.js',
+
+       path: path.resolve(__dirname, 'dist'), // Replace with your output directory
+
+     },
+
+   };
+
+   ```
+
+4. Include the generated bundle file (`bundle.js`) in your HTML file:
+
+   ```html
+
+   <script src="dist/bundle.js"></script>
+
+   ```
+
+Using a module bundler provides the advantage of optimizing and combining multiple JavaScript files into a single bundle, which can improve loading performance on your website.
+
+Note: Make sure to adjust the paths and file names based on your project's structure and configuration.
+
+Remember to consult the documentation or official resources of your specific module bundler for more detailed instructions on how to include external libraries and build your project.
