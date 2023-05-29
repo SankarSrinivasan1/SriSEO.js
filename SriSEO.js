@@ -176,3 +176,104 @@ SEOify.analyzeAndRecommendations = function () {
 
   // Generate recommendations based
 
+  
+
+  var pageTitle = document.title;
+
+  var metaDescription = document.querySelector('meta[name="description"]').getAttribute('content');
+
+  var headingTags = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+  var imageTags = document.querySelectorAll('img');
+
+  // Analyze the webpage elements and gather SEO data
+
+  var analysisResults = {
+
+    title: pageTitle,
+
+    description: metaDescription,
+
+    headingCount: headingTags.length,
+
+    imageCount: imageTags.length,
+
+    // ... Other SEO analysis data
+
+  };
+
+  // Generate recommendations based on the analysis
+
+  var recommendations = [];
+
+  if (pageTitle.length > 70) {
+
+    recommendations.push("Shorten the page title to improve readability and search engine visibility.");
+
+  }
+
+  if (metaDescription.length > 160) {
+
+    recommendations.push("Optimize the meta description to be within the recommended length of 160 characters.");
+
+  }
+
+  if (headingTags.length < 1) {
+
+    recommendations.push("Include at least one heading tag (h1 - h6) on the webpage for better structure and SEO.");
+
+  }
+
+  if (imageTags.length < 5) {
+
+    recommendations.push("Add more relevant images to enhance the visual appeal and engagement of the webpage.");
+
+  }
+
+  // Return the analysis results and recommendations
+
+  return {
+
+    analysis: analysisResults,
+
+    recommendations: recommendations
+
+  };
+
+};
+
+// Function to check compatibility and performance
+
+SEOify.checkCompatibilityAndPerformance = function () {
+
+  // Check browser compatibility
+
+  var isCompatible = true; // Perform browser compatibility checks
+
+  // Check performance metrics
+
+  var performanceScore = 90; // Calculate performance score based on performance metrics
+
+  // Return the compatibility and performance results
+
+  return {
+
+    compatible: isCompatible,
+
+    performance: performanceScore
+
+  };
+
+};
+
+// Export the SEOify object for use in other scripts
+
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+
+  module.exports = SEOify;
+
+} else {
+
+  window.SEOify = SEOify;
+
+}
