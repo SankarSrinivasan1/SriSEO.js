@@ -1,10 +1,10 @@
-# SriSEO.js is JavaScript library for search engine optimization 
+# SriSEO.js is JavaScript library for Search Engine Optimization 
 
 
 
-The objective of the "SriSEO.js" library is to provide an easy-to-use and lightweight solution for improving the search engine visibility and optimization of HTML websites. It aims to assist developers, particularly those without extensive knowledge of SEO techniques, in implementing common SEO best practices without requiring deep understanding or manual intervention.
+The objective of the "SriSEO.js" library is to provide an easy-to-use and lightweight solution **for improving the search engine visibility and optimization of HTML websites**. It aims to assist website owners, particularly those without extensive knowledge of SEO techniques, in implementing common SEO best practices without requiring deep understanding or manual intervention.
 
-In today's digital landscape, search engines play a crucial role in driving organic traffic to websites. However, optimizing a website for search engine crawlers and ensuring proper indexing can be a complex and time-consuming task. Many developers may not have the expertise or the bandwidth to implement SEO techniques effectively, leading to missed opportunities for organic traffic.
+In today's digital landscape, search engines play a crucial role in driving organic traffic to websites. However, optimizing a website for search engine crawlers and ensuring proper indexing can be a complex and time-consuming task. Many website owners may not have the expertise or the bandwidth to implement SEO techniques effectively, leading to missed opportunities for organic traffic.
 
 The "SEOify.js" library aims to bridge this gap by offering a simplified approach to SEO optimization. By providing a set of intuitive functions and APIs, it empowers developers to implement key SEO elements without the need to delve into intricate SEO strategies or understand the underlying complexities.
 
