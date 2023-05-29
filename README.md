@@ -1,5 +1,5 @@
-# SriSEO.js
-SriSEO.js is JavaScript library for search engine optimization 
+# SriSEO.js is JavaScript library for search engine optimization 
+
 
 
 The objective of the "SriSEO.js" library is to provide an easy-to-use and lightweight solution for improving the search engine visibility and optimization of HTML websites. It aims to assist developers, particularly those without extensive knowledge of SEO techniques, in implementing common SEO best practices without requiring deep understanding or manual intervention.
