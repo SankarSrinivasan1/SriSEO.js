@@ -85,42 +85,25 @@ var slug = SriSEO.generateSlug(url);
 console.log(slug); // Output: 'https-example-com-my-blog-post'
 ```
 
-#### Example 3: Setting Canonical URL
-
+#### Setting Canonical URL
 ```javascript
-
 var canonicalURL = 'https://example.com/my-blog-post';
-
 SriSEO.setCanonicalURL(canonicalURL);
-
 ```
 
-#### Example 4: Adding Structured Data Markup
-
+#### Adding Structured Data Markup
 ```javascript
-
 var structuredData = {
-
   "@context": "https://schema.org",
-
   "@type": "BlogPosting",
-
   "headline": "My Blog Post",
-
   "datePublished": "2023-05-31",
-
   "author": {
-
     "@type": "Person",
-
     "name": "John Doe"
-
   }
-
 };
-
 SriSEO.addStructuredData(structuredData);
-
 ```
 
 #### Example 5: Generating XML Sitemap
