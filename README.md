@@ -8,69 +8,9 @@ By integrating the "SriSEO.js" library into their projects, website owners can e
 
 Ultimately, the objective is to simplify the process of implementing SEO best practices, enabling website owners to enhance the search engine visibility and discoverability of their HTML websites.
 
-### Functions
+## For Website Owners
 
-#### `SriSEO.setMetaTags(metaData)`
-Sets the meta tags for the webpage.
-- `metaData` (Object): An object containing the metadata information.
-  - `description` (String): The description of the webpage.
-  - `keywords` (Array): An array of keywords relevant to the webpage.
-
-#### `SriSEO.generateSlug(url)`
-Generates a URL slug from a given URL.
-- `url` (String): The URL from which to generate the slug.
-
-#### `SriSEO.setCanonicalURL(url)`
-
-Sets the canonical URL for the webpage.
-
-- `url` (String): The canonical URL of the webpage.
-
-#### `SriSEO.addStructuredData(data)`
-
-Adds structured data markup to the webpage.
-
-- `data` (Object): The structured data object to be added.
-
-#### `SriSEO.generateXMLSitemap(urls)`
-
-Generates an XML sitemap with the given URLs.
-
-- `urls` (Array): An array of URLs to include in the sitemap.
-
-#### `SriSEO.setOpenGraphTags(data)`
-
-Sets the Open Graph tags for the webpage.
-
-- `data` (Object): An object containing the Open Graph data.
-
-#### `SriSEO.setTwitterCardTags(data)`
-
-Sets the Twitter Card tags for the webpage.
-
-- `data` (Object): An object containing the Twitter Card data.
-
-#### `SriSEO.analyzeAndRecommendations()`
-
-Performs SEO analysis on the webpage and provides recommendations based on the analysis.
-
-- Returns an object with the following properties:
-
-  - `analysis` (Object): An object containing the results of the SEO analysis, such as the page title, description, heading count, image count, and more.
-
-  - `recommendations` (Array): An array of recommended SEO improvements based on the analysis.
-
-#### `SriSEO.checkCompatibilityAndPerformance()`
-
-Checks the browser compatibility and performance of the webpage.
-
-- Returns an object with the following properties:
-
-  - `compatible` (Boolean): Indicates whether the webpage is compatible with the current browser.
-
-  - `performance` (Number): A performance score indicating the performance of the webpage.
-
-### Usage
+### Installation
 
 Include the "SriSEO.js" library in your project by referencing it in your HTML file:
 
@@ -79,7 +19,7 @@ Include the "SriSEO.js" library in your project by referencing it in your HTML f
 <script src="path/to/sriseo.js"></script>
 
 ```
-
+### Usage
 #### Example 1: Setting Meta Tags
 
 ```javascript
@@ -457,3 +397,49 @@ To include the "SEOify.js" library from a content delivery network (CDN), follow
 By including the "SEOify.js" library from a CDN, you can take advantage of the network's global distribution and caching capabilities. This can result in faster loading times for your website visitors, as they can access the library from a server closer to their geographic location.
 
 Make sure to choose a reliable CDN provider and verify that the CDN URL for the "SEOify.js" library is correct and up to date.
+
+## For Developers
+
+### Functions
+
+#### `SriSEO.setMetaTags(metaData)`
+Sets the meta tags for the webpage.
+- `metaData` (Object): An object containing the metadata information.
+  - `description` (String): The description of the webpage.
+  - `keywords` (Array): An array of keywords relevant to the webpage.
+
+#### `SriSEO.generateSlug(url)`
+Generates a URL slug from a given URL.
+- `url` (String): The URL from which to generate the slug.
+
+#### `SriSEO.setCanonicalURL(url)`
+Sets the canonical URL for the webpage.
+- `url` (String): The canonical URL of the webpage.
+
+#### `SriSEO.addStructuredData(data)`
+Adds structured data markup to the webpage.
+- `data` (Object): The structured data object to be added.
+
+#### `SriSEO.generateXMLSitemap(urls)`
+Generates an XML sitemap with the given URLs.
+- `urls` (Array): An array of URLs to include in the sitemap.
+
+#### `SriSEO.setOpenGraphTags(data)`
+Sets the Open Graph tags for the webpage.
+- `data` (Object): An object containing the Open Graph data.
+
+#### `SriSEO.setTwitterCardTags(data)`
+Sets the Twitter Card tags for the webpage.
+- `data` (Object): An object containing the Twitter Card data.
+
+#### `SriSEO.analyzeAndRecommendations()`
+Performs SEO analysis on the webpage and provides recommendations based on the analysis.
+- Returns an object with the following properties:
+  - `analysis` (Object): An object containing the results of the SEO analysis, such as the page title, description, heading count, image count, and more.
+  - `recommendations` (Array): An array of recommended SEO improvements based on the analysis.
+
+#### `SriSEO.checkCompatibilityAndPerformance()`
+Checks the browser compatibility and performance of the webpage.
+- Returns an object with the following properties:
+  - `compatible` (Boolean): Indicates whether the webpage is compatible with the current browser.
+  - `performance` (Number): A performance score indicating the performance of the webpage.
