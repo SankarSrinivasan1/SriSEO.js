@@ -10,6 +10,56 @@ Ultimately, the objective is to simplify the process of implementing SEO best pr
 
 ## For Website Owners
 
+**********************
+Certainly! If you prefer an alternative way to include the "SEOify.js" library in HTML websites without using a module bundler, you can host the library file yourself and include it as a `<script>` tag in your HTML file. Here's how you can do it:
+
+1. Download the "SEOify.js" library file and save it in your project directory.
+
+2. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the location of the library file. For example:
+
+   ```html
+
+   <script src="path/to/seoify.js"></script>
+
+   ```
+
+   Replace `'path/to/seoify.js'` with the actual path to the library file in your project.
+
+3. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
+
+   ```html
+
+   <html>
+
+     <head>
+
+       <!-- Your HTML head content here -->
+
+     </head>
+
+     <body>
+
+       <!-- Your HTML body content here -->
+
+       
+
+       <script src="path/to/seoify.js"></script>
+
+     </body>
+
+   </html>
+
+   ```
+
+4. Once the library is included, you can start using the "SEOify.js" functions in your JavaScript code. Refer to the previous code examples and documentation provided earlier in this conversation for details on how to use the library's features.
+
+This method allows you to include the "SEOify.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for smaller projects or static websites.
+
+Remember to adjust the file path (`'path/to/seoify.js'`) based on the actual location of the library file in your project directory structure.
+
+Note: If you plan to use the library on multiple pages of your website, it's recommended to include the `<script>` tag in a shared HTML template or include file to ensure consistent usage across all pages.
+**********************
+
 ### Installation
 
 Include the "SriSEO.js" library in your project by referencing it in your HTML file:
@@ -219,129 +269,10 @@ For more detailed information on the usage of each function and additional featu
 Enjoy optimizing your website for improved search engine visibility and user experience with the "SEOify.js" library!
 
 
-Alternative way 
-Certainly! In addition to including the "SEOify.js" library as a `<script>` tag in your HTML file, an alternative way to include the library is by using a module bundler like webpack or Rollup. This allows you to leverage the benefits of a module-based development approach and manage your project's dependencies more efficiently.
-
-To include "SEOify.js" using a module bundler, follow these steps:
-
-1. Install the "SEOify.js" library as a dependency in your project using npm or yarn:
-
-   ```bash
-
-   npm install seoify.js
-
-   ```
-
-   or
-
-   ```bash
-
-   yarn add seoify.js
-
-   ```
-
-2. Import the library in your JavaScript file:
-
-   ```javascript
-
-   import SEOify from 'seoify.js';
-
-   ```
-
-   If you're using a specific function from the library, you can import it directly:
-
-   ```javascript
-
-   import { setMetaTags, generateSlug } from 'seoify.js';
-
-   ```
-
-3. Build your JavaScript bundle using the module bundler's configuration. This process may vary depending on the bundler you're using.
-
-   For example, with webpack, you would typically have a configuration file (`webpack.config.js`) where you define the entry point and output configuration:
-
-   ```javascript
-
-   const path = require('path');
-
-   module.exports = {
-
-     entry: './src/index.js', // Replace with your entry file
-
-     output: {
-
-       filename: 'bundle.js',
-
-       path: path.resolve(__dirname, 'dist'), // Replace with your output directory
-
-     },
-
-   };
-
-   ```
-
-4. Include the generated bundle file (`bundle.js`) in your HTML file:
-
-   ```html
-
-   <script src="dist/bundle.js"></script>
-
-   ```
-
-Using a module bundler provides the advantage of optimizing and combining multiple JavaScript files into a single bundle, which can improve loading performance on your website.
-
-Note: Make sure to adjust the paths and file names based on your project's structure and configuration.
-
-Remember to consult the documentation or official resources of your specific module bundler for more detailed instructions on how to include external libraries and build your project.
 
 
-Certainly! If you prefer an alternative way to include the "SEOify.js" library in HTML websites without using a module bundler, you can host the library file yourself and include it as a `<script>` tag in your HTML file. Here's how you can do it:
 
-1. Download the "SEOify.js" library file and save it in your project directory.
 
-2. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the location of the library file. For example:
-
-   ```html
-
-   <script src="path/to/seoify.js"></script>
-
-   ```
-
-   Replace `'path/to/seoify.js'` with the actual path to the library file in your project.
-
-3. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
-
-   ```html
-
-   <html>
-
-     <head>
-
-       <!-- Your HTML head content here -->
-
-     </head>
-
-     <body>
-
-       <!-- Your HTML body content here -->
-
-       
-
-       <script src="path/to/seoify.js"></script>
-
-     </body>
-
-   </html>
-
-   ```
-
-4. Once the library is included, you can start using the "SEOify.js" functions in your JavaScript code. Refer to the previous code examples and documentation provided earlier in this conversation for details on how to use the library's features.
-
-This method allows you to include the "SEOify.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for smaller projects or static websites.
-
-Remember to adjust the file path (`'path/to/seoify.js'`) based on the actual location of the library file in your project directory structure.
-
-Note: If you plan to use the library on multiple pages of your website, it's recommended to include the `<script>` tag in a shared HTML template or include file to ensure consistent usage across all pages.
 
 ******
 To include the "SEOify.js" library from a content delivery network (CDN), follow these steps:
@@ -398,7 +329,65 @@ By including the "SEOify.js" library from a CDN, you can take advantage of the n
 
 Make sure to choose a reliable CDN provider and verify that the CDN URL for the "SEOify.js" library is correct and up to date.
 
+***
+
 ## For Developers
+
+### Functions
+
+Include the library is by using a module bundler like webpack or Rollup. This allows you to leverage the benefits of a module-based development approach and manage your project's dependencies more efficiently.
+
+To include "SriSEO.js" using a module bundler, follow these steps:
+
+1. Install the "SriSEO.js" library as a dependency in your project using npm or yarn:
+
+   ```bash
+   npm install seoify.js
+   ```
+
+    or
+
+   ```bash
+   yarn add seoify.js
+   ```
+
+2. Import the library in your JavaScript file:
+   
+   ```javascript
+   import SEOify from 'seoify.js';
+   ```
+
+   If you're using a specific function from the library, you can import it directly:
+
+   ```javascript
+   import { setMetaTags, generateSlug } from 'seoify.js';
+   ```
+
+3. Build your JavaScript bundle using the module bundler's configuration. This process may vary depending on the bundler you're using.
+   For example, with webpack, you would typically have a configuration file (`webpack.config.js`) where you define the entry point and output configuration:
+
+   ```javascript
+   const path = require('path');
+   module.exports = {
+     entry: './src/index.js', // Replace with your entry file
+     output: {
+       filename: 'bundle.js',
+       path: path.resolve(__dirname, 'dist'), // Replace with your output directory
+     },
+   };
+   ```
+
+4. Include the generated bundle file (`bundle.js`) in your HTML file:
+
+   ```html
+   <script src="dist/bundle.js"></script>
+   ```
+
+Using a module bundler provides the advantage of optimizing and combining multiple JavaScript files into a single bundle, which can improve loading performance on your website.
+
+Note: Make sure to adjust the paths and file names based on your project's structure and configuration.
+
+Remember to consult the documentation or official resources of your specific module bundler for more detailed instructions on how to include external libraries and build your project.
 
 ### Functions
 
