@@ -20,43 +20,43 @@ Sets the meta tags for the webpage.
 
   - `keywords` (Array): An array of keywords relevant to the webpage.
 
-#### `SEOify.generateSlug(url)`
+#### `SriSEO.generateSlug(url)`
 
 Generates a URL slug from a given URL.
 
 - `url` (String): The URL from which to generate the slug.
 
-#### `SEOify.setCanonicalURL(url)`
+#### `SriSEO.setCanonicalURL(url)`
 
 Sets the canonical URL for the webpage.
 
 - `url` (String): The canonical URL of the webpage.
 
-#### `SEOify.addStructuredData(data)`
+#### `SriSEO.addStructuredData(data)`
 
 Adds structured data markup to the webpage.
 
 - `data` (Object): The structured data object to be added.
 
-#### `SEOify.generateXMLSitemap(urls)`
+#### `SriSEO.generateXMLSitemap(urls)`
 
 Generates an XML sitemap with the given URLs.
 
 - `urls` (Array): An array of URLs to include in the sitemap.
 
-#### `SEOify.setOpenGraphTags(data)`
+#### `SriSEO.setOpenGraphTags(data)`
 
 Sets the Open Graph tags for the webpage.
 
 - `data` (Object): An object containing the Open Graph data.
 
-#### `SEOify.setTwitterCardTags(data)`
+#### `SriSEO.setTwitterCardTags(data)`
 
 Sets the Twitter Card tags for the webpage.
 
 - `data` (Object): An object containing the Twitter Card data.
 
-#### `SEOify.analyzeAndRecommendations()`
+#### `SriSEO.analyzeAndRecommendations()`
 
 Performs SEO analysis on the webpage and provides recommendations based on the analysis.
 
@@ -66,7 +66,7 @@ Performs SEO analysis on the webpage and provides recommendations based on the a
 
   - `recommendations` (Array): An array of recommended SEO improvements based on the analysis.
 
-#### `SEOify.checkCompatibilityAndPerformance()`
+#### `SriSEO.checkCompatibilityAndPerformance()`
 
 Checks the browser compatibility and performance of the webpage.
 
@@ -78,11 +78,11 @@ Checks the browser compatibility and performance of the webpage.
 
 ### Usage
 
-Include the "SEOify.js" library in your project by referencing it in your HTML file:
+Include the "SriSEO.js" library in your project by referencing it in your HTML file:
 
 ```html
 
-<script src="path/to/seoify.js"></script>
+<script src="path/to/sriseo.js"></script>
 
 ```
 
@@ -90,7 +90,7 @@ Include the "SEOify.js" library in your project by referencing it in your HTML f
 
 ```javascript
 
-SEOify.setMetaTags({
+SriSEO.setMetaTags({
 
   description: 'This is the description of my webpage.',
 
@@ -106,7 +106,7 @@ SEOify.setMetaTags({
 
 var url = 'https://example.com/my blog post';
 
-var slug = SEOify.generateSlug(url);
+var slug = SriSEO.generateSlug(url);
 
 console.log(slug); // Output: 'https-example-com-my-blog-post'
 
@@ -118,7 +118,7 @@ console.log(slug); // Output: 'https-example-com-my-blog-post'
 
 var canonicalURL = 'https://example.com/my-blog-post';
 
-SEOify.setCanonicalURL(canonicalURL);
+SriSEO.setCanonicalURL(canonicalURL);
 
 ```
 
@@ -146,27 +146,11 @@ var structuredData = {
 
 };
 
-SEOify.addStructuredData(structuredData);
+SriSEO.addStructuredData(structuredData);
 
 ```
 
 #### Example 5: Generating XML Sitemap
-
-```javascript
-
-var urls = [
-
-  'https://example.com/',
-
-  'https://example.com/about',
-
-  'https://
-
-By automating and abstracting these SEO tasks, the "SriSEO.js" library allows website owners to focus more on building engaging content and user experiences, while still reaping the benefits of improved organic traffic and search engine rankings.
-
-Certainly! Here's the continuation of the examples and documentation for the "SEOify.js" library:
-
-#### Example 5: Generating XML Sitemap (continued)
 
 ```javascript
 
@@ -182,7 +166,7 @@ var urls = [
 
 ];
 
-var xmlSitemap = SEOify.generateXMLSitemap(urls);
+var xmlSitemap = SriSEO.generateXMLSitemap(urls);
 
 console.log(xmlSitemap);
 
