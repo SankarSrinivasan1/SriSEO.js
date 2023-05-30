@@ -11,19 +11,13 @@ Ultimately, the objective is to simplify the process of implementing SEO best pr
 ### Functions
 
 #### `SriSEO.setMetaTags(metaData)`
-
 Sets the meta tags for the webpage.
-
 - `metaData` (Object): An object containing the metadata information.
-
   - `description` (String): The description of the webpage.
-
   - `keywords` (Array): An array of keywords relevant to the webpage.
 
 #### `SriSEO.generateSlug(url)`
-
 Generates a URL slug from a given URL.
-
 - `url` (String): The URL from which to generate the slug.
 
 #### `SriSEO.setCanonicalURL(url)`
