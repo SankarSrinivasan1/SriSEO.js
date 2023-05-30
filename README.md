@@ -70,30 +70,19 @@ Include the "SriSEO.js" library in your project by referencing it in your HTML f
 
 ```
 ### Usage
-#### Example 1: Setting Meta Tags
-
+#### Setting Meta Tags
 ```javascript
-
 SriSEO.setMetaTags({
-
   description: 'This is the description of my webpage.',
-
   keywords: ['SEO', 'optimization', 'HTML', 'JavaScript']
-
 });
-
 ```
 
-#### Example 2: Generating a URL Slug
-
+#### Generating a URL Slug
 ```javascript
-
 var url = 'https://example.com/my blog post';
-
 var slug = SriSEO.generateSlug(url);
-
 console.log(slug); // Output: 'https-example-com-my-blog-post'
-
 ```
 
 #### Example 3: Setting Canonical URL
