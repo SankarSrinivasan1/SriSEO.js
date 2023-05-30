@@ -1,4 +1,6 @@
 // SriSEO.js
+// Released by Sankar Srinivasan under MIT License 
+// Sankar Srinivasan petra.srini@gmail.com
 
 // SriSEO.js is a JavaScript library that provides an easy way to implement essential SEO features in your HTML websites. It allows you to manage meta tags, generate URL slugs, incorporate structured data markup, generate XML sitemaps, set Open Graph and Twitter Card tags, perform SEO analysis, and check compatibility and performance.
 
