@@ -157,7 +157,7 @@ SriSEO.checkCompatibilityAndPerformance = function () {
   };
 };
 
-// Export the SEOify object for use in other scripts
+// Export the SriSEO object for use in other scripts
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
   module.exports = SriSEO;
 } else {
