@@ -33,24 +33,14 @@ Ultimately, the objective is to simplify the process of implementing SEO best pr
    </html>
    ```
 
-4. Once the library is included, you can start using the "SEOify.js" functions in your JavaScript code. Refer to the previous code examples and documentation provided earlier in this conversation for details on how to use the library's features.
+4. Once the library is included, you can start using the "SriSEO.js" functions in your website code. Refer to the **"Usage" code examples and documentation provided below for details on how to use the library's features.**
 
-This method allows you to include the "SEOify.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for smaller projects or static websites.
+***This method allows you to include the "SriSEO.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for smaller projects or static websites.***
 
 Remember to adjust the file path (`'path/to/seoify.js'`) based on the actual location of the library file in your project directory structure.
 
-Note: If you plan to use the library on multiple pages of your website, it's recommended to include the `<script>` tag in a shared HTML template or include file to ensure consistent usage across all pages.
-**********************
+**Note: If you plan to use the library on multiple pages of your website, it's recommended to include the `<script>` tag in a shared HTML template or include file to ensure consistent usage across all pages.**
 
-### Installation
-
-Include the "SriSEO.js" library in your project by referencing it in your HTML file:
-
-```html
-
-<script src="path/to/sriseo.js"></script>
-
-```
 ### Usage
 #### Setting Meta Tags
 ```javascript
