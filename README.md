@@ -15,9 +15,9 @@ Ultimately, the objective is to simplify the process of implementing SEO best pr
 
 2. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the location of the library file. For example:
    ```html
-   <script src="path/to/seoify.js"></script>
+   <script src="path/to/sriseo.js"></script>
    ```
-   Replace `'path/to/seoify.js'` with the actual path to the library file in your project. For example mywebsite/SriSEO or your actual path.
+   Replace `'path/to/sriseo.js'` with the actual path to the library file in your project. For example mywebsite/SriSEO or your actual path.
 
 3. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
 
@@ -28,7 +28,7 @@ Ultimately, the objective is to simplify the process of implementing SEO best pr
      </head>
      <body>
        <!-- Your HTML body content here -->
-       <script src="path/to/seoify.js"></script>
+       <script src="path/to/sriseo.js"></script>
      </body>
    </html>
    ```
