@@ -106,62 +106,35 @@ var structuredData = {
 SriSEO.addStructuredData(structuredData);
 ```
 
-#### Example 5: Generating XML Sitemap
-
+#### Generating XML Sitemap
 ```javascript
-
 var urls = [
-
   'https://example.com/',
-
   'https://example.com/about',
-
   'https://example.com/products',
-
   'https://example.com/contact'
-
 ];
-
 var xmlSitemap = SriSEO.generateXMLSitemap(urls);
-
 console.log(xmlSitemap);
-
 ```
 
 Output:
-
 ```
-
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-
     <loc>https://example.com/</loc>
-
   </url>
-
   <url>
-
     <loc>https://example.com/about</loc>
-
   </url>
-
   <url>
-
     <loc>https://example.com/products</loc>
-
   </url>
-
   <url>
-
     <loc>https://example.com/contact</loc>
-
   </url>
-
 </urlset>
-
 ```
 
 #### Example 6: Setting Open Graph Tags
