@@ -1,5 +1,27 @@
 // SriSEO.js
-// Namespace for the library
+
+// SriSEO.js is a JavaScript library that provides an easy way to implement essential SEO features in your HTML websites. It allows you to manage meta tags, generate URL slugs, incorporate structured data markup, generate XML sitemaps, set Open Graph and Twitter Card tags, perform SEO analysis, and check compatibility and performance.
+
+// Features
+
+// Meta tag management for title, description, and keywords.
+
+// URL slug generator for SEO-friendly URLs.
+
+// Canonical URL management for specifying the preferred URL version.
+
+// Structured data markup integration for improved search engine understanding.
+
+// XML sitemap generation for better search engine crawling.
+
+// Open Graph and Twitter Card tag management for social media sharing.
+
+// SEO analysis and recommendations for optimizing your webpage.
+
+// Compatibility and performance checks to ensure a smooth user experience.
+
+
+
 
 var SriSEO = {};
 
