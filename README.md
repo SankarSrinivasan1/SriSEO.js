@@ -146,11 +146,13 @@ Please note that the provided examples and usage instructions are intended as a 
 For more detailed information on the usage of each function and additional features, refer to the inline comments within the "SriSEO.js" library code [here](http://sriseojs.netlify.app/sriseo.js). Enjoy optimizing your website for improved search engine visibility and user experience with the "SriSEO.js" library!
 
 Contact Sankar Srinivasan for feedback at petra.srini@gmail.com
-## Support the efforts
-> Donate and encourage [PayPal](https://www.paypal.com/paypalme/sankarsrinivasan)
-> UPI +919042404390
 
+## Support the efforts
+> Donate and encourage my efforts [PayPal](https://www.paypal.com/paypalme/sankarsrinivasan)
+> UPI +919042404390
+> By Sankar Srinivasan
 *****
+
 
 ## For Developers
 
