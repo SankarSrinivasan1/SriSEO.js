@@ -323,3 +323,102 @@ Checks the browser compatibility and performance of the webpage.
 - Returns an object with the following properties:
   - `compatible` (Boolean): Indicates whether the webpage is compatible with the current browser.
   - `performance` (Number): A performance score indicating the performance of the webpage.
+
+## API Functionalities in SriSEO.js
+### Connect Google Search Console API into SriSEO.js
+
+To connect the Google Search Console API with the "SEOify.js" library, you can follow these steps:
+
+1. Set up a project and enable the Google Search Console API in the Google Cloud Console:
+
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/) and create a new project or select an existing one.
+
+   - Enable the Google Search Console API for your project.
+
+   - Create API credentials (OAuth 2.0 client ID) for your project. Note down the generated Client ID and Client Secret.
+
+2. Authenticate and authorize the "SEOify.js" library to access the Google Search Console API:
+
+   - In your "SEOify.js" library, implement the authentication flow using the OAuth 2.0 protocol. This typically involves redirecting the user to the Google authorization endpoint and handling the callback to obtain an access token.
+
+   - Use the generated Client ID and Client Secret to authenticate and authorize your application to access the Google Search Console API on behalf of the user.
+
+3. Make API requests to the Google Search Console API:
+
+   - Once authenticated, you can use the Google API Client Library for JavaScript to make requests to the Google Search Console API endpoints.
+
+   - Implement the desired functionality using the available API methods. For example, you can fetch search analytics data, submit sitemaps, or monitor indexing status.
+
+Here's an example of how the code might look within the "SEOify.js" library to connect and make API requests to the Google Search Console API:
+
+```javascript
+
+// Initialize the Google API client library
+
+gapi.load('client', init);
+
+function init() {
+
+  // Load the client library and set up the credentials
+
+  gapi.client.init({
+
+    clientId: 'YOUR_CLIENT_ID',
+
+    clientSecret: 'YOUR_CLIENT_SECRET',
+
+    discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/webmasters/v3/rest'],
+
+    scope: 'https://www.googleapis.com/auth/webmasters.readonly',
+
+  }).then(() => {
+
+    // Authenticate the user
+
+    gapi.auth2.getAuthInstance().signIn().then(() => {
+
+      // API request example: Fetch search analytics data
+
+      gapi.client.webmasters.searchanalytics.query({
+
+        siteUrl: 'https://example.com',
+
+        requestBody: {
+
+          startDate: '2023-01-01',
+
+          endDate: '2023-01-07',
+
+          dimensions: ['query'],
+
+        },
+
+      }).then((response) => {
+
+        const data = response.result;
+
+        // Process the response data as needed
+
+        console.log(data);
+
+      }).catch((error) => {
+
+        console.error('Error making API request:', error);
+
+      });
+
+    });
+
+  });
+
+}
+
+```
+
+Note: The code snippet above assumes that you have already included the necessary Google API client library and have the required authorization and authentication flow implemented.
+
+Remember to replace `'YOUR_CLIENT_ID'` and `'YOUR_CLIENT_SECRET'` with the actual values generated in the Google Cloud Console for your project.
+
+Consult the Google Search Console API documentation for the available endpoints, request parameters, and response formats. Modify the example code to suit your specific needs and integrate it into the appropriate sections of your "SEOify.js" library.
+
+Ensure that you handle authentication errors, rate limits, and any potential exceptions that may occur during the API requests for a robust and reliable integration.
