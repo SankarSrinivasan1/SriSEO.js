@@ -200,9 +200,9 @@ console.log(compatibility.performance); // Output: Performance score
 The "SriSEO.js" library is compatible with modern web browsers, including **Chrome, Firefox, Safari, and Edge**. It is built with performance in mind, utilizing efficient JavaScript code execution and minimal resource consumption.
 
 
-## Conclusion
+## Contact us
 
-The "SriSEO.js" library provides a set of functions and utilities to assist website owners in implementing various SEO features. By utilizing this library, website owners can easily manage meta tags, generate URL slugs, incorporate structured data markup, generate XML sitemaps, set Open Graph and Twitter Card tags, perform SEO analysis, and check compatibility and performance.
+By utilizing this library, website owners can easily manage **meta tags, generate URL slugs, incorporate structured data markup, generate XML sitemaps, set Open Graph and Twitter Card tags, perform SEO analysis, and check compatibility and performance.**
 
 Please note that the provided examples and usage instructions are intended as a guide, and you may need to adapt them to fit your specific project requirements and website architecture.
 
@@ -210,7 +210,9 @@ For more detailed information on the usage of each function and additional featu
 
 Enjoy optimizing your website for improved search engine visibility and user experience with the "SriSEO.js" library!
 
+Contact Sankar Srinivasan for feedback at petra.srini@gmail.com
 
+Donate and encourage
 
 
 
@@ -223,7 +225,7 @@ Enjoy optimizing your website for improved search engine visibility and user exp
 
 ## For Developers
 
-### Functions
+### Installation 
 
 Include the library is by using a module bundler like webpack or Rollup. This allows you to leverage the benefits of a module-based development approach and manage your project's dependencies more efficiently.
 
@@ -232,25 +234,25 @@ To include "SriSEO.js" using a module bundler, follow these steps:
 1. Install the "SriSEO.js" library as a dependency in your project using npm or yarn:
 
    ```bash
-   npm install seoify.js
+   npm install SriSEO.js
    ```
 
     or
 
    ```bash
-   yarn add seoify.js
+   yarn add SriSEO.js
    ```
 
 2. Import the library in your JavaScript file:
    
    ```javascript
-   import SEOify from 'seoify.js';
+   import SriSEO from 'sriseo.js';
    ```
 
    If you're using a specific function from the library, you can import it directly:
 
    ```javascript
-   import { setMetaTags, generateSlug } from 'seoify.js';
+   import { setMetaTags, generateSlug } from 'sriseo.js';
    ```
 
 3. Build your JavaScript bundle using the module bundler's configuration. This process may vary depending on the bundler you're using.
@@ -262,8 +264,7 @@ To include "SriSEO.js" using a module bundler, follow these steps:
      entry: './src/index.js', // Replace with your entry file
      output: {
        filename: 'bundle.js',
-       path: path.resolve(__dirname, 'dist'), // Replace with your output directory
-     },
+       path: path.resolve(__dirname, 'dist'), // Replace with your output director   },
    };
    ```
 
