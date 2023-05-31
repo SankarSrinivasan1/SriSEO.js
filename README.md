@@ -149,8 +149,8 @@ Contact Sankar Srinivasan for feedback at petra.srini@gmail.com
 
 ## Support the efforts
 > Donate and encourage my efforts [PayPal](https://www.paypal.com/paypalme/sankarsrinivasan)
-> UPI +919042404390
-> By Sankar Srinivasan
+UPI +919042404390
+By Sankar Srinivasan
 *****
 
 
