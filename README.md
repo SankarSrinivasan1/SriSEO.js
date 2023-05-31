@@ -324,8 +324,8 @@ Checks the browser compatibility and performance of the webpage.
   - `compatible` (Boolean): Indicates whether the webpage is compatible with the current browser.
   - `performance` (Number): A performance score indicating the performance of the webpage.
 
-## API Functionalities in SriSEO.js
-### Connect Google Search Console API into SriSEO.js
+### API Functionalities in SriSEO.js
+#### Connect Google Search Console API into SriSEO.js
 
 To connect the Google Search Console API with the "SEOify.js" library, you can follow these steps:
 
