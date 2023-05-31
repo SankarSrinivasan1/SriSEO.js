@@ -243,9 +243,10 @@ Checks the browser compatibility and performance of the webpage.
 - Returns an object with the following properties:
   - `compatible` (Boolean): Indicates whether the webpage is compatible with the current browser.
   - `performance` (Number): A performance score indicating the performance of the webpage.
+*****
 
 ### API Functionalities in SriSEO.js
-#### Connect Google Search Console API into SriSEO.js
+### Connect Google Search Console API into SriSEO.js
 To connect the Google Search Console API with the "SriSEO.js" library, you can follow these steps:
 
 1. Set up a project and enable the Google Search Console API in the Google Cloud Console:
@@ -304,9 +305,9 @@ Note: The code snippet above assumes that you have already included the necessar
 Consult the Google Search Console API documentation for the available endpoints, request parameters, and response formats. Modify the example code to suit your specific needs and **integrate it into the appropriate sections of "SriSEO.js" library.**
 
 Ensure that you handle authentication errors, rate limits, and any potential exceptions that may occur during the API requests for a robust and reliable integration.
+*****
 
-
-#### Connect Google Analytics API into SriSEO.js
+### Connect Google Analytics API into SriSEO.js
 
 To connect the Google Analytics API with the "SEOify.js" library, you can follow these general steps:
 
@@ -403,7 +404,7 @@ Remember to replace `'YOUR_API_KEY'` with your actual API key obtained from the 
 
 By integrating the Google Analytics API into your "SEOify.js" library, you can provide website owners with valuable data insights, track key metrics, and offer performance analysis to help optimize their websites for better SEO.
 
-**** Connect schema.org API into SriSEO.js
+### Connect schema.org API into SriSEO.js
 
 Connecting the Schema.org API with the "SEOify.js" library involves utilizing the Schema.org vocabulary and guidelines to generate structured data markup. Here's a general outline of the steps to integrate Schema.org API functionality into your "SEOify.js" library:
 
@@ -501,7 +502,7 @@ Remember to consult the Schema.org documentation for the specific schema types a
 
 It's important to note that the Schema.org API itself doesn't provide specific endpoints or a server-side component. Instead, it provides a standardized vocabulary and guidelines for implementing structured data. Therefore, the integration of the Schema.org API is primarily about leveraging the schema types and properties provided by Schema.org in your library, rather than making direct API calls.
 
-#### Connect Social Media APIs into SriSEO.js
+### Connect Social Media APIs into SriSEO.js
 
 Connecting social media platform APIs with the "SEOify.js" library allows you to integrate social media features, such as sharing buttons, social media metadata, and social media analytics. Here's a general outline of the steps to connect social media platform APIs with your "SEOify.js" library:
 
@@ -593,7 +594,7 @@ Remember to replace `'YOUR_FACEBOOK_ACCESS_TOKEN'` with the actual access token 
 
 Repeat the above steps for other social media platforms and their respective APIs to incorporate additional social media functionality into your "SEOify.js" library. By connecting social media platform APIs, you can enhance your library with features that promote social sharing, improve social media engagement, and provide valuable social media insights for website owners.
 
-#### Connect Third Party APIs into SriSEO.js
+### Connect Third Party APIs into SriSEO.js
 
 Connecting an SEO analysis API with the "SEOify.js" library involves utilizing the API's endpoints and data to perform SEO analysis on a website. Here's a general outline of the steps to integrate an SEO analysis API into your "SEOify.js" library:
 
