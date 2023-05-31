@@ -422,3 +422,99 @@ Remember to replace `'YOUR_CLIENT_ID'` and `'YOUR_CLIENT_SECRET'` with the actua
 Consult the Google Search Console API documentation for the available endpoints, request parameters, and response formats. Modify the example code to suit your specific needs and integrate it into the appropriate sections of your "SEOify.js" library.
 
 Ensure that you handle authentication errors, rate limits, and any potential exceptions that may occur during the API requests for a robust and reliable integration.
+
+#### Connect Google Analytics API into SriSEO.js
+
+To connect the Google Analytics API with the "SEOify.js" library, you can follow these general steps:
+
+1. Set up a Google Analytics project:
+
+   - Go to the [Google Analytics website](https://analytics.google.com) and create a new project.
+
+   - Set up your website or app tracking by following the provided instructions.
+
+   - Obtain the necessary credentials, including the client ID and client secret.
+
+2. Enable the Google Analytics API:
+
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+
+   - Create a new project or select an existing project that matches your Google Analytics project.
+
+   - Enable the Google Analytics API for your project.
+
+   - Generate API credentials, including the API key, client ID, and client secret.
+
+3. Authenticate and authorize the "SEOify.js" library with the Google Analytics API:
+
+   - Implement the authentication flow, which typically involves OAuth 2.0.
+
+   - Redirect the user to the Google OAuth consent screen to obtain authorization.
+
+   - Retrieve the access token and refresh token after successful authorization.
+
+4. Set up API communication in your "SEOify.js" library:
+
+   - Utilize a suitable HTTP library or SDK to make requests to the Google Analytics API endpoints.
+
+   - Handle authentication by providing the access token in the request headers or using the client library's authentication methods.
+
+5. Fetch and process Google Analytics data:
+
+   - Identify the specific data you want to retrieve from the Google Analytics API, such as pageviews, sessions, or conversion metrics.
+
+   - Make the appropriate API requests, specifying the required parameters and dimensions.
+
+   - Handle the API responses, parsing the returned data and extracting the relevant metrics for analysis.
+
+Here's an example of how you can integrate the Google Analytics API into your "SEOify.js" library to fetch pageviews for a specific page:
+
+```javascript
+
+// Example function to fetch pageviews from Google Analytics API
+
+function fetchPageviews(pagePath) {
+
+  const apiKey = 'YOUR_API_KEY';
+
+  const viewId = 'YOUR_VIEW_ID';
+
+  const apiUrl = `https://www.googleapis.com/analytics/v3/data/ga?ids=ga:${viewId}&start-date=30daysAgo&end-date=today&metrics=ga:pageviews&dimensions=ga:pagePath&filters=ga:pagePath==${encodeURIComponent(pagePath)}&key=${apiKey}`;
+
+  // Make the API request
+
+  fetch(apiUrl)
+
+    .then(response => response.json())
+
+    .then(data => {
+
+      // Process the Google Analytics data
+
+      const pageviews = data.totalsForAllResults['ga:pageviews'];
+
+      // Execute callback or update the UI with the pageviews data
+
+      // ...
+
+    })
+
+    .catch(error => {
+
+      console.error('Error fetching pageviews:', error);
+
+    });
+
+}
+
+// Example usage of the fetchPageviews function
+
+fetchPageviews('/example-page');
+
+```
+
+In the code snippet above, the `fetchPageviews` function makes a request to the Google Analytics API, specifying the API key, view ID, and desired parameters such as the date range, metrics, dimensions, and filters. The API responds with the pageviews data for the specified page path. You can then process this data and update the user interface or execute any necessary actions.
+
+Remember to replace `'YOUR_API_KEY'` with your actual API key obtained from the Google Cloud Console, and `'YOUR_VIEW_ID'` with the view ID associated with your Google Analytics project. Adjust the code to match the specific API endpoints, request parameters, and response formats of the Google Analytics API.
+
+By connecting the Google Analytics API, you can leverage the power of Google Analytics data within your "SEOify.js" library to provide website owners with valuable insights and analytics
