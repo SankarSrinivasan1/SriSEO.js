@@ -159,37 +159,31 @@ By Sankar Srinivasan
 
 ### Installation 
 
-Include the library is by using a module bundler like webpack or Rollup. This allows you to leverage the benefits of a module-based development approach and manage your project's dependencies more efficiently.
+Include 'SriSEO.js' library by using a module bundler like webpack or Rollup. This allows you to leverage the benefits of a module-based development approach and manage your project's dependencies more efficiently.
 
 To include "SriSEO.js" using a module bundler, follow these steps:
 
 1. Install the "SriSEO.js" library as a dependency in your project using npm or yarn:
-
    ```bash
    npm install SriSEO.js
    ```
-
     or
-
    ```bash
    yarn add SriSEO.js
    ```
 
-2. Import the library in your JavaScript file:
-   
+2. Import the library in your JavaScript file: 
    ```javascript
    import SriSEO from 'sriseo.js';
    ```
 
    If you're using a specific function from the library, you can import it directly:
-
    ```javascript
    import { setMetaTags, generateSlug } from 'sriseo.js';
    ```
 
 3. Build your JavaScript bundle using the module bundler's configuration. This process may vary depending on the bundler you're using.
    For example, with webpack, you would typically have a configuration file (`webpack.config.js`) where you define the entry point and output configuration:
-
    ```javascript
    const path = require('path');
    module.exports = {
@@ -201,19 +195,13 @@ To include "SriSEO.js" using a module bundler, follow these steps:
    ```
 
 4. Include the generated bundle file (`bundle.js`) in your HTML file:
-
    ```html
    <script src="dist/bundle.js"></script>
    ```
 
-Using a module bundler provides the advantage of optimizing and combining multiple JavaScript files into a single bundle, which can improve loading performance on your website.
-
-Note: Make sure to adjust the paths and file names based on your project's structure and configuration.
-
-Remember to consult the documentation or official resources of your specific module bundler for more detailed instructions on how to include external libraries and build your project.
+Using a module bundler provides the advantage of optimizing and combining multiple JavaScript files into a single bundle, which can improve loading performance on the website. Make sure to adjust the paths and file names based on your project's structure and configuration. Remember to consult the documentation or official resources of your specific module bundler for more detailed instructions on how to include external libraries and build your project.
 
 ### Functions
-
 #### `SriSEO.setMetaTags(metaData)`
 Sets the meta tags for the webpage.
 - `metaData` (Object): An object containing the metadata information.
@@ -258,102 +246,65 @@ Checks the browser compatibility and performance of the webpage.
 
 ### API Functionalities in SriSEO.js
 #### Connect Google Search Console API into SriSEO.js
-
-To connect the Google Search Console API with the "SEOify.js" library, you can follow these steps:
+To connect the Google Search Console API with the "SriSEO.js" library, you can follow these steps:
 
 1. Set up a project and enable the Google Search Console API in the Google Cloud Console:
-
    - Go to the [Google Cloud Console](https://console.cloud.google.com/) and create a new project or select an existing one.
-
    - Enable the Google Search Console API for your project.
-
    - Create API credentials (OAuth 2.0 client ID) for your project. Note down the generated Client ID and Client Secret.
 
-2. Authenticate and authorize the "SEOify.js" library to access the Google Search Console API:
-
-   - In your "SEOify.js" library, implement the authentication flow using the OAuth 2.0 protocol. This typically involves redirecting the user to the Google authorization endpoint and handling the callback to obtain an access token.
-
+2. Authenticate and authorize the "SriSEO.js" library to access the Google Search Console API:
+   - In "SriSEO.js" library, implement the authentication flow using the OAuth 2.0 protocol. This typically involves redirecting the user to the Google authorization endpoint and handling the callback to obtain an access token.
    - Use the generated Client ID and Client Secret to authenticate and authorize your application to access the Google Search Console API on behalf of the user.
 
 3. Make API requests to the Google Search Console API:
-
    - Once authenticated, you can use the Google API Client Library for JavaScript to make requests to the Google Search Console API endpoints.
-
    - Implement the desired functionality using the available API methods. For example, you can fetch search analytics data, submit sitemaps, or monitor indexing status.
 
 Here's an example of how the code might look within the "SEOify.js" library to connect and make API requests to the Google Search Console API:
-
 ```javascript
-
 // Initialize the Google API client library
-
 gapi.load('client', init);
-
 function init() {
 
-  // Load the client library and set up the credentials
-
+// Load the client library and set up the credentials
   gapi.client.init({
-
     clientId: 'YOUR_CLIENT_ID',
-
     clientSecret: 'YOUR_CLIENT_SECRET',
-
     discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/webmasters/v3/rest'],
-
     scope: 'https://www.googleapis.com/auth/webmasters.readonly',
-
   }).then(() => {
 
-    // Authenticate the user
-
+// Authenticate the user
     gapi.auth2.getAuthInstance().signIn().then(() => {
 
-      // API request example: Fetch search analytics data
-
+// API request example: Fetch search analytics data
       gapi.client.webmasters.searchanalytics.query({
-
         siteUrl: 'https://example.com',
-
         requestBody: {
-
           startDate: '2023-01-01',
-
           endDate: '2023-01-07',
-
           dimensions: ['query'],
-
         },
-
       }).then((response) => {
-
         const data = response.result;
 
-        // Process the response data as needed
-
+// Process the response data as needed
         console.log(data);
-
       }).catch((error) => {
-
         console.error('Error making API request:', error);
-
       });
-
     });
-
   });
-
 }
-
 ```
 
-Note: The code snippet above assumes that you have already included the necessary Google API client library and have the required authorization and authentication flow implemented.
+Note: The code snippet above assumes that you have already included the necessary Google API client library and have the required authorization and authentication flow implemented. Remember to replace `'YOUR_CLIENT_ID'` and `'YOUR_CLIENT_SECRET'` with the actual values generated in the Google Cloud Console for your project.
 
-Remember to replace `'YOUR_CLIENT_ID'` and `'YOUR_CLIENT_SECRET'` with the actual values generated in the Google Cloud Console for your project.
-
-Consult the Google Search Console API documentation for the available endpoints, request parameters, and response formats. Modify the example code to suit your specific needs and integrate it into the appropriate sections of your "SEOify.js" library.
+Consult the Google Search Console API documentation for the available endpoints, request parameters, and response formats. Modify the example code to suit your specific needs and **integrate it into the appropriate sections of "SriSEO.js" library.**
 
 Ensure that you handle authentication errors, rate limits, and any potential exceptions that may occur during the API requests for a robust and reliable integration.
+
 
 #### Connect Google Analytics API into SriSEO.js
 
