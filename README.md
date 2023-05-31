@@ -9,50 +9,16 @@ By integrating the "SriSEO.js" library into their projects, website owners can e
 Ultimately, the objective is to simplify the process of implementing SEO best practices, enabling website owners to enhance the search engine visibility and discoverability of their HTML websites.
 
 ## For Website Owners
-### Installation 1
+### Installation 
 
-1. Download the "SriSEO.js" library file and save it in your website folder. For example mywebsite/SriSEO folder.
-
-2. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the location of the library file. For example:
-   ```html
-   <script src="mywebsite/sriseo/sriseo.js"></script>
-   ```
-   Replace `'mywebsite/sriseo/sriseo.js'` with the actual path to the library file in your project. 
-
-3. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
-
-   ```html
-   <html>
-     <head>
-       <!-- Your HTML head content here -->
-     </head>
-     <body>
-       <!-- Your HTML body content here -->
-       <script src="mywebsite/sriseo/sriseo.js"></script>
-     </body>
-   </html>
-   ```
-
-4. Once the library is included, you can start using the "SriSEO.js" functions in your website code. Refer to the **"Usage" code examples and documentation provided below for details on how to use the library's features.**
-
-This method allows you to include the "SriSEO.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for **smaller projects or static websites.**
-
-Remember to adjust the file path (`'mywebsite/sriseo/sriseo.js'`) based on the actual location of the library file in your project directory structure.
-
-**Note: If you plan to use the library on multiple pages of your website, it's recommended to include the `<script>` tag in a shared HTML template or include file to ensure consistent usage across all pages.**
-
-### Installation 2
-
-To include the "SriSEO.js" library from a content delivery network (CDN), follow these steps:
+To include the "SriSEO.js" library from content delivery network (CDN), follow these steps:
 
 1. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the CDN URL. 
- 
- ```html
+  ```html
    <script src="https://sriseojs.netlify.app/sriseo.js"></script>
    ```
 
 2. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
-
    ```html
    <html>
      <head>
@@ -170,11 +136,9 @@ console.log(compatibility.performance); // Output: Performance score
 ```
 
 #### Compatibility and Performance
-
 The "SriSEO.js" library is compatible with modern web browsers, including **Chrome, Firefox, Safari, and Edge**. It is built with performance in mind, utilizing efficient JavaScript code execution and minimal resource consumption.
 
 #### Contact us
-
 By utilizing this library, website owners can easily manage **meta tags, generate URL slugs, incorporate structured data markup, generate XML sitemaps, set Open Graph and Twitter Card tags, perform SEO analysis, and check compatibility and performance.**
 
 Please note that the provided examples and usage instructions are intended as a guide, and you may need to adapt them to fit your specific project requirements and website architecture.
