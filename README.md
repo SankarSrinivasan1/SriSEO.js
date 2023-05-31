@@ -9,7 +9,7 @@ By integrating the "SriSEO.js" library into their projects, website owners can e
 Ultimately, the objective is to simplify the process of implementing SEO best practices, enabling website owners to enhance the search engine visibility and discoverability of their HTML websites.
 
 ## For Website Owners
-### Installation
+### Installation 1
 
 1. Download the "SriSEO.js" library file and save it in your website folder. For example mywebsite/SriSEO folder.
 
@@ -35,11 +35,37 @@ Ultimately, the objective is to simplify the process of implementing SEO best pr
 
 4. Once the library is included, you can start using the "SriSEO.js" functions in your website code. Refer to the **"Usage" code examples and documentation provided below for details on how to use the library's features.**
 
-***This method allows you to include the "SriSEO.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for smaller projects or static websites.***
+This method allows you to include the "SriSEO.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for smaller projects or static websites.
 
 Remember to adjust the file path (`'path/to/seoify.js'`) based on the actual location of the library file in your project directory structure.
 
 **Note: If you plan to use the library on multiple pages of your website, it's recommended to include the `<script>` tag in a shared HTML template or include file to ensure consistent usage across all pages.**
+
+### Installation 2
+
+To include the "SEOify.js" library from a content delivery network (CDN), follow these steps:
+
+1. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the CDN URL. For example:
+ 
+ ```html
+   <script src="https://sriseojs.netlify.app/sriseo.js"></script>
+   ```
+
+2. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
+
+   ```html
+   <html>
+     <head>
+       <!-- Your HTML head content here -->
+     </head>
+     <body>
+       <!-- Your HTML body content here -->  
+       <script src="https://sriseojs.netlify.app/sriseo.js"></script>
+     </body>
+   </html>
+   ```
+
+5. Once the library is included, you can start using the "SriSEO.js" functions in your website code. By including the "SriSEO.js" library from a CDN, you can take advantage of the network's global distribution and caching capabilities. This can result in faster loading times for your website visitors, as they can access the library from a server closer to their geographic location.
 
 ### Usage
 #### Setting Meta Tags
@@ -192,59 +218,7 @@ Enjoy optimizing your website for improved search engine visibility and user exp
 
 
 ******
-To include the "SEOify.js" library from a content delivery network (CDN), follow these steps:
 
-1. Search for a reliable CDN that hosts the "SEOify.js" library. CDNs like jsDelivr, unpkg, and Cloudflare CDN are popular options.
-
-2. Once you have identified a CDN, retrieve the URL for the "SEOify.js" library hosted on that CDN. The URL will typically follow a format similar to:
-
-   ```
-
-   https://cdn.example.com/path/to/seoify.js
-
-   ```
-
-3. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the CDN URL. For example:
-
-   ```html
-
-   <script src="https://cdn.example.com/path/to/seoify.js"></script>
-
-   ```
-
-   Replace `'https://cdn.example.com/path/to/seoify.js'` with the actual URL of the "SEOify.js" library on the chosen CDN.
-
-4. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
-
-   ```html
-
-   <html>
-
-     <head>
-
-       <!-- Your HTML head content here -->
-
-     </head>
-
-     <body>
-
-       <!-- Your HTML body content here -->
-
-       
-
-       <script src="https://cdn.example.com/path/to/seoify.js"></script>
-
-     </body>
-
-   </html>
-
-   ```
-
-5. Once the library is included, you can start using the "SEOify.js" functions in your JavaScript code. Refer to the previous code examples and documentation provided earlier in this conversation for details on how to use the library's features.
-
-By including the "SEOify.js" library from a CDN, you can take advantage of the network's global distribution and caching capabilities. This can result in faster loading times for your website visitors, as they can access the library from a server closer to their geographic location.
-
-Make sure to choose a reliable CDN provider and verify that the CDN URL for the "SEOify.js" library is correct and up to date.
 
 ***
 
