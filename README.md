@@ -28,7 +28,7 @@ Ultimately, the objective is to simplify the process of implementing SEO best pr
      </head>
      <body>
        <!-- Your HTML body content here -->
-       <script src="path/to/sriseo.js"></script>
+       <script src="mywebsite/sriseo/sriseo.js"></script>
      </body>
    </html>
    ```
