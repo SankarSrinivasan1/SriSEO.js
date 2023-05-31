@@ -135,7 +135,7 @@ Output:
 </urlset>
 ```
 
-#### Example 6: Setting Open Graph Tags
+#### Setting Open Graph Tags
 
 ```javascript
 
@@ -153,7 +153,7 @@ SEOify.setOpenGraphTags({
 
 ```
 
-#### Example 7: Setting Twitter Card Tags
+#### Setting Twitter Card Tags
 
 ```javascript
 
@@ -171,7 +171,7 @@ SEOify.setTwitterCardTags({
 
 ```
 
-#### Example 8: Performing SEO Analysis and Recommendations
+#### Performing SEO Analysis and Recommendations
 
 ```javascript
 
@@ -183,7 +183,7 @@ console.log(analysis.recommendations); // Output: Array of recommended improveme
 
 ```
 
-#### Example 9: Checking Compatibility and Performance
+#### Checking Compatibility and Performance
 
 ```javascript
 
