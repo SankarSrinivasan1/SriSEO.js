@@ -169,12 +169,11 @@ console.log(compatibility.compatible); // Output: Boolean indicating compatibili
 console.log(compatibility.performance); // Output: Performance score
 ```
 
-## Compatibility and Performance
+#### Compatibility and Performance
 
 The "SriSEO.js" library is compatible with modern web browsers, including **Chrome, Firefox, Safari, and Edge**. It is built with performance in mind, utilizing efficient JavaScript code execution and minimal resource consumption.
 
-
-## Contact us
+#### Contact us
 
 By utilizing this library, website owners can easily manage **meta tags, generate URL slugs, incorporate structured data markup, generate XML sitemaps, set Open Graph and Twitter Card tags, perform SEO analysis, and check compatibility and performance.**
 
@@ -183,7 +182,8 @@ Please note that the provided examples and usage instructions are intended as a 
 For more detailed information on the usage of each function and additional features, refer to the inline comments within the "SriSEO.js" library code [here](http://sriseojs.netlify.app/sriseo.js). Enjoy optimizing your website for improved search engine visibility and user experience with the "SriSEO.js" library!
 
 Contact Sankar Srinivasan for feedback at petra.srini@gmail.com
-> Donate and encourage [PayPal](https://www.paypal.com/paypalme/sankarsrinivasan) UPI +919042404390
+> Donate and encourage [PayPal](https://www.paypal.com/paypalme/sankarsrinivasan)
+> UPI +919042404390
 
 *****
 
