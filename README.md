@@ -15,9 +15,9 @@ Ultimately, the objective is to simplify the process of implementing SEO best pr
 
 2. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the location of the library file. For example:
    ```html
-   <script src="path/to/sriseo.js"></script>
+   <script src="mywebsite/sriseo/sriseo.js"></script>
    ```
-   Replace `'path/to/sriseo.js'` with the actual path to the library file in your project. For example mywebsite/SriSEO or your actual path.
+   Replace `'mywebsite/sriseo/sriseo.js'` with the actual path to the library file in your project. 
 
 3. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
 
@@ -35,17 +35,17 @@ Ultimately, the objective is to simplify the process of implementing SEO best pr
 
 4. Once the library is included, you can start using the "SriSEO.js" functions in your website code. Refer to the **"Usage" code examples and documentation provided below for details on how to use the library's features.**
 
-This method allows you to include the "SriSEO.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for smaller projects or static websites.
+This method allows you to include the "SriSEO.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for **smaller projects or static websites.**
 
-Remember to adjust the file path (`'path/to/seoify.js'`) based on the actual location of the library file in your project directory structure.
+Remember to adjust the file path (`'mywebsite/sriseo/sriseo.js'`) based on the actual location of the library file in your project directory structure.
 
 **Note: If you plan to use the library on multiple pages of your website, it's recommended to include the `<script>` tag in a shared HTML template or include file to ensure consistent usage across all pages.**
 
 ### Installation 2
 
-To include the "SEOify.js" library from a content delivery network (CDN), follow these steps:
+To include the "SriSEO.js" library from a content delivery network (CDN), follow these steps:
 
-1. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the CDN URL. For example:
+1. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the CDN URL. 
  
  ```html
    <script src="https://sriseojs.netlify.app/sriseo.js"></script>
