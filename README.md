@@ -98,7 +98,7 @@ var structuredData = {
   "datePublished": "2023-05-31",
   "author": {
     "@type": "Person",
-    "name": "John Doe"
+    "name": "Sankar Srinivasan"
   }
 };
 SriSEO.addStructuredData(structuredData);
@@ -139,7 +139,7 @@ Output:
 
 ```javascript
 
-SEOify.setOpenGraphTags({
+SriSEO.setOpenGraphTags({
 
   title: 'My Blog Post',
 
@@ -157,7 +157,7 @@ SEOify.setOpenGraphTags({
 
 ```javascript
 
-SEOify.setTwitterCardTags({
+SriSEO.setTwitterCardTags({
 
   title: 'My Blog Post',
 
@@ -175,7 +175,7 @@ SEOify.setTwitterCardTags({
 
 ```javascript
 
-var analysis = SEOify.analyzeAndRecommendations();
+var analysis = SriSEO.analyzeAndRecommendations();
 
 console.log(analysis.analysis); // Output: Object containing SEO analysis results
 
@@ -187,7 +187,7 @@ console.log(analysis.recommendations); // Output: Array of recommended improveme
 
 ```javascript
 
-var compatibility = SEOify.checkCompatibilityAndPerformance();
+var compatibility = SriSEO.checkCompatibilityAndPerformance();
 
 console.log(compatibility.compatible); // Output: Boolean indicating compatibility
 
@@ -197,19 +197,18 @@ console.log(compatibility.performance); // Output: Performance score
 
 ## Compatibility and Performance
 
-The "SEOify.js" library is compatible with modern web browsers, including Chrome, Firefox, Safari, and Edge. It is built with performance in mind, utilizing efficient JavaScript code execution and minimal resource consumption.
+The "SriSEO.js" library is compatible with modern web browsers, including **Chrome, Firefox, Safari, and Edge**. It is built with performance in mind, utilizing efficient JavaScript code execution and minimal resource consumption.
 
-It is recommended to always keep the library updated with the latest version to ensure compatibility with future browser updates and to take advantage of any performance optimizations.
 
 ## Conclusion
 
-The "SEOify.js" library provides a set of functions and utilities to assist website owners in implementing various SEO features. By utilizing this library, website owners can easily manage meta tags, generate URL slugs, incorporate structured data markup, generate XML sitemaps, set Open Graph and Twitter Card tags, perform SEO analysis, and check compatibility and performance.
+The "SriSEO.js" library provides a set of functions and utilities to assist website owners in implementing various SEO features. By utilizing this library, website owners can easily manage meta tags, generate URL slugs, incorporate structured data markup, generate XML sitemaps, set Open Graph and Twitter Card tags, perform SEO analysis, and check compatibility and performance.
 
 Please note that the provided examples and usage instructions are intended as a guide, and you may need to adapt them to fit your specific project requirements and website architecture.
 
-For more detailed information on the usage of each function and additional features, refer to the inline comments within the "SEOify.js" library code or consult the official documentation.
+For more detailed information on the usage of each function and additional features, refer to the inline comments within the "SriSEO.js" library code.
 
-Enjoy optimizing your website for improved search engine visibility and user experience with the "SEOify.js" library!
+Enjoy optimizing your website for improved search engine visibility and user experience with the "SriSEO.js" library!
 
 
 
