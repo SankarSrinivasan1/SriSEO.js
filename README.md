@@ -136,63 +136,37 @@ Output:
 ```
 
 #### Setting Open Graph Tags
-
 ```javascript
-
 SriSEO.setOpenGraphTags({
-
   title: 'My Blog Post',
-
   description: 'This is my blog post',
-
   image: 'https://example.com/images/my-post.jpg',
-
   url: 'https://example.com/my-blog-post'
-
 });
-
 ```
 
 #### Setting Twitter Card Tags
-
 ```javascript
-
 SriSEO.setTwitterCardTags({
-
   title: 'My Blog Post',
-
   description: 'This is my blog post',
-
   image: 'https://example.com/images/my-post.jpg',
-
   url: 'https://example.com/my-blog-post'
-
 });
-
 ```
 
 #### Performing SEO Analysis and Recommendations
-
 ```javascript
-
 var analysis = SriSEO.analyzeAndRecommendations();
-
 console.log(analysis.analysis); // Output: Object containing SEO analysis results
-
 console.log(analysis.recommendations); // Output: Array of recommended improvements
-
 ```
 
 #### Checking Compatibility and Performance
-
 ```javascript
-
 var compatibility = SriSEO.checkCompatibilityAndPerformance();
-
 console.log(compatibility.compatible); // Output: Boolean indicating compatibility
-
 console.log(compatibility.performance); // Output: Performance score
-
 ```
 
 ## Compatibility and Performance
@@ -206,22 +180,12 @@ By utilizing this library, website owners can easily manage **meta tags, generat
 
 Please note that the provided examples and usage instructions are intended as a guide, and you may need to adapt them to fit your specific project requirements and website architecture.
 
-For more detailed information on the usage of each function and additional features, refer to the inline comments within the "SriSEO.js" library code.
-
-Enjoy optimizing your website for improved search engine visibility and user experience with the "SriSEO.js" library!
+For more detailed information on the usage of each function and additional features, refer to the inline comments within the "SriSEO.js" library code [here](http://sriseojs.netlify.app/sriseo.js). Enjoy optimizing your website for improved search engine visibility and user experience with the "SriSEO.js" library!
 
 Contact Sankar Srinivasan for feedback at petra.srini@gmail.com
+> Donate and encourage [PayPal](https://www.paypal.com/paypalme/sankarsrinivasan) UPI +919042404390
 
-Donate and encourage
-
-
-
-
-
-******
-
-
-***
+*****
 
 ## For Developers
 
