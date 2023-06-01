@@ -424,7 +424,7 @@ console.log(articleStructuredData);
 
 The code snippet above demonstrates a basic implementation of generating Article structured data markup using Schema.org vocabulary. You can expand on this concept and create additional functions for other schema types and properties based on your requirements.
 
-Remember to consult the Schema.org documentation for the specific schema types and properties you want to include in your library. Modify the example code to suit your needs and integrate it into the appropriate sections of your "SEOify.js" library.
+Remember to consult the Schema.org documentation for the specific schema types and properties you want to include in your library. Modify the example code to suit your needs and integrate it into the appropriate sections of your "SriSEO.js" library.
 
 It's important to note that the Schema.org API itself doesn't provide specific endpoints or a server-side component. Instead, it provides a standardized vocabulary and guidelines for implementing structured data. Therefore, the integration of the Schema.org API is primarily about leveraging the schema types and properties provided by Schema.org in your library, rather than making direct API calls.
 
@@ -440,7 +440,7 @@ Connecting social media platform APIs with the "SriSEO.js" library allows you to
    - Create developer accounts on the respective social media platforms.
    - Register your application to obtain the necessary API credentials, such as API keys, client IDs, and client secrets.
 
-3. Authenticate and authorize the "SEOify.js" library with the social media platform APIs:
+3. Authenticate and authorize the "SriSEO.js" library with the social media platform APIs:
    - Implement the authentication flow for each social media platform API.
    - Redirect the user to the respective platform's authorization endpoint and handle the callback to obtain access tokens.
    - Store the access tokens securely for subsequent API requests.
