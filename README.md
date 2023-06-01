@@ -308,7 +308,7 @@ Ensure that you handle authentication errors, rate limits, and any potential exc
 *****
 
 ### Connect Google Analytics API into SriSEO.js
-To connect the Google Analytics API with the "SEOify.js" library, you can follow these general steps:
+To connect the Google Analytics API with the "SriSEO.js" library, you can follow these general steps:
 
 1. Set up a Google Analytics project:
    - Go to the [Google Analytics website](https://analytics.google.com) and create a new project.
@@ -321,12 +321,12 @@ To connect the Google Analytics API with the "SEOify.js" library, you can follow
    - Enable the Google Analytics API for your project.
    - Generate API credentials, including the API key, client ID, and client secret.
 
-3. Authenticate and authorize the "SEOify.js" library with the Google Analytics API:
+3. Authenticate and authorize the "SriSEO.js" library with the Google Analytics API:
    - Implement the authentication flow, which typically involves OAuth 2.0.
    - Redirect the user to the Google OAuth consent screen to obtain authorization.
    - Retrieve the access token and refresh token after successful authorization.
 
-4. Set up API communication in your "SEOify.js" library:
+4. Set up API communication in your "SriSEO.js" library:
    - Utilize a suitable HTTP library or SDK to make requests to the Google Analytics API endpoints.
    - Handle authentication by providing the access token in the request headers or using the client library's authentication methods.
 
@@ -335,7 +335,7 @@ To connect the Google Analytics API with the "SEOify.js" library, you can follow
    - Make the appropriate API requests, specifying the required parameters and dimensions.
    - Handle the API responses, parsing the returned data and extracting the relevant metrics for analysis.
 
-Here's an example of how you can integrate the Google Analytics API into your "SEOify.js" library to fetch pageviews for a specific page:
+Here's an example of how you can integrate the Google Analytics API into your "SriSEO.js" library to fetch pageviews for a specific page:
 ```javascript
 // Example function to fetch pageviews from Google Analytics API
 function fetchPageviews(pagePath) {
@@ -365,12 +365,12 @@ In the code snippet above, the `fetchPageviews` function makes a request to the 
 Remember to replace `'YOUR_API_KEY'` with your actual API key obtained from the Google Cloud Console, and `'YOUR_VIEW_ID'` with the view ID associated with your Google Analytics project. Adjust the code to match the specific API endpoints, request parameters, and response formats of the Google Analytics API.
 
 
-By integrating the Google Analytics API into your "SEOify.js" library, you can provide website owners with valuable data insights, track key metrics, and offer performance analysis to help optimize their websites for better SEO.
+By integrating the Google Analytics API into your "SriSEO.js" library, you can provide website owners with valuable data insights, track key metrics, and offer performance analysis to help optimize their websites for better SEO.
 *****
 
 ### Connect schema.org API into SriSEO.js
 
-Connecting the Schema.org API with the "SEOify.js" library involves utilizing the Schema.org vocabulary and guidelines to generate structured data markup. Here's a general outline of the steps to integrate Schema.org API functionality into your "SEOify.js" library:
+Connecting the Schema.org API with the "SriSEO.js" library involves utilizing the Schema.org vocabulary and guidelines to generate structured data markup. Here's a general outline of the steps to integrate Schema.org API functionality into your "SriSEO.js" library:
 
 1. Familiarize yourself with the Schema.org documentation:
 
@@ -380,7 +380,7 @@ Connecting the Schema.org API with the "SEOify.js" library involves utilizing th
 
    - Determine which schema types and properties are relevant to your implementation.
 
-2. Define functions in your "SEOify.js" library to generate structured data markup:
+2. Define functions in your "SriSEO.js" library to generate structured data markup:
 
    - Identify the specific use cases for structured data in your library, such as adding schema for articles, products, events, or local businesses.
 
@@ -388,7 +388,7 @@ Connecting the Schema.org API with the "SEOify.js" library involves utilizing th
 
    - Consider the different data formats for structured data, such as JSON-LD, Microdata, or RDFa, and decide which format to use in your library.
 
-3. Leverage the schema types and properties in your "SEOify.js" library:
+3. Leverage the schema types and properties in your "SriSEO.js" library:
 
    - Use the Schema.org vocabulary to create objects and populate them with relevant properties.
 
@@ -396,7 +396,7 @@ Connecting the Schema.org API with the "SEOify.js" library involves utilizing th
 
    - Generate the final structured data markup based on the chosen schema type and properties.
 
-Here's a simplified example of how you can integrate Schema.org functionality into your "SEOify.js" library:
+Here's a simplified example of how you can integrate Schema.org functionality into your "SriSEO.js" library:
 
 ```javascript
 
