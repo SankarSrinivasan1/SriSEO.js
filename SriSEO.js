@@ -12,6 +12,7 @@
 // Open Graph and Twitter Card tag management for social media sharing.
 // SEO analysis and recommendations for optimizing your webpage.
 // Compatibility and performance checks to ensure a smooth user experience.
+// Connect third party APIs
 
 var SriSEO = {};
 
