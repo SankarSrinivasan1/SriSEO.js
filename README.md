@@ -9,7 +9,44 @@ By integrating the "SriSEO.js" library into their projects, website owners can e
 Ultimately, the objective is to simplify the process of implementing SEO best practices, enabling website owners to enhance the search engine visibility and discoverability of their HTML websites.
 
 ## For Website Owners
-### Installation 
+
+### Installation 1
+
+
+1. Download the "SriSEO.js" library file and save it in your project directory.
+
+2. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the location of the library file. For example:
+
+   ```html
+   <script src="path/to/sriseo.js"></script>
+   ```
+
+   Replace `'path/to/sriseo.js'` with the actual path to the library file in your project.
+
+3. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
+
+   ```html
+   <html>
+     <head>
+       <!-- Your HTML head content here -->
+     </head>
+     <body>
+       <!-- Your HTML body content here -->
+       
+       <script src="path/to/sriseo.js"></script>
+     </body>
+   </html>
+   ```
+
+4. Once the library is included, you can start using the "SriSEO.js" functions in your wwebsite code. 
+
+This method allows you to include the "SriSEO.js" library directly in your HTML file without relying on a build process or external module bundler. It simplifies the setup process, especially for smaller projects or static websites.
+
+Remember to adjust the file path (`'path/to/sriseo.js'`) based on the actual location of the library file in your project directory structure.
+
+Note: If you plan to use the library on multiple pages of your website, it's recommended to include the `<script>` tag in a shared HTML template or include file to ensure consistent usage across all pages.
+
+### Installation 2
 
 To include the "SriSEO.js" library from content delivery network (CDN), follow these steps:
 
