@@ -52,7 +52,7 @@ To include the "SriSEO.js" library from content delivery network (CDN), follow t
 
 1. In your HTML file, include the library by adding a `<script>` tag with the `src` attribute pointing to the CDN URL. 
   ```html
-   <script src="https://sriseojs.netlify.app/sriseo.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/SankarSrinivasan1/SriSEO.js@main/SriSEO.js"></script>
    ```
 
 2. Place the `<script>` tag above the closing `</body>` tag to ensure that the library is loaded after the HTML content is parsed.
@@ -63,7 +63,8 @@ To include the "SriSEO.js" library from content delivery network (CDN), follow t
      </head>
      <body>
        <!-- Your HTML body content here -->  
-       <script src="https://sriseojs.netlify.app/sriseo.js"></script>
+       <script src="https://cdn.jsdelivr.net/gh/SankarSrinivasan1/SriSEO.js@main/SriSEO.js
+"></script>
      </body>
    </html>
    ```
