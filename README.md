@@ -63,8 +63,7 @@ To include the "SriSEO.js" library from content delivery network (CDN), follow t
      </head>
      <body>
        <!-- Your HTML body content here -->  
-       <script src="https://cdn.jsdelivr.net/gh/SankarSrinivasan1/SriSEO.js@main/SriSEO.js
-"></script>
+       <script src="https://cdn.jsdelivr.net/gh/SankarSrinivasan1/SriSEO.js@main/SriSEO.js"></script>
      </body>
    </html>
    ```
