@@ -584,9 +584,5 @@ Integrating an SEO analysis API involves understanding the API's documentation, 
 
 #### Contact Sankar Srinivasan for suggestions and feedback. Email: petra.srini@gmail.com
 
-## Support the efforts
-> Donate and encourage my efforts [PayPal](https://www.paypal.com/paypalme/sankarsrinivasan)
-
-UPI +919042404390
-By Sankar Srinivasan
-*****
+## Blog post
+https://sankarsrinivasan.stck.me/post/100142/SriSEO-js-To-Boost-SEO-in-HTML-sites
